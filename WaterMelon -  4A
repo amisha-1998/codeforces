@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int w;
+    scanf("%d",&w);
+    printf(( w<=2 || w%2 ) ? "NO" : "YES" ); 
+ 
+    return 0;
+}
