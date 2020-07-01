@@ -21,3 +21,7 @@ int main() {
 
 	return 0;
 }
+CAN ALSO USE THIS LOGIC 
+/*w=w*(w+1)/2;
+	int ans = w*k-n;
+	cout<<ans<<endl; */
