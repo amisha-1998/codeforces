@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int step;
+	cin>>step;
+	int count=0;
+	while(step!=0)
+	{
+		if( step>=5 )
+		{
+			count = count+ step /5;
+			step = step % 5;
+		}
+		if(step>=4)
+		{
+			count = count + step/4;
+			step = step%4;			
+		}
+		if(step>=3)
+		{
+			count = count + step/3;
+			step=step%3;
+		}
+		if(step>=2)
+		{
+			count = count + step/2;
+			step=step%2;
+		}
+		if(step>=1)
+		{
+			count = count + step/1;
+			step=step % 1;
+		}
+	}
+	cout<<count<<endl;
+	return 0;
+}
