@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	string str;
+	cin>>str;
+	int l,i,count=1;
+	l=str.length();
+	sort(str.begin(),str.end());
+	for(i=0;i<l-1;i++)
+	{
+		if(str[i]!=str[i+1])
+		{
+			count=count+1;
+		}
+	}
+	if( count % 2 ==1)
+	{
+		cout<<"IGNORE HIM!"<<endl;
+	}
+	else
+	{
+		cout<<"CHAT WITH HER!"<<endl;
+	}
+	return 0;
+}
