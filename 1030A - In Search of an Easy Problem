@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	int i,arr[n],count=0;
+	for(i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+	for(i=0;i<n;i++)
+	{
+		if(arr[i]==1)
+		{
+			count=count+1;
+			break;
+		}
+		else
+		{
+			count = 0;
+		}
+	}
+	if(count!=0)
+	{
+		cout<<"HARD"<<endl;
+	}
+	else if(count==0)
+	{
+		cout<<"EASY"<<endl;
+	}
+	return 0;
+}
