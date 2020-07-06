@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+	char s[1000];
+	int rotation=0,flag,diff,i;
+	cin>>s;	
+	flag = 97;
+	for(i=0;i<strlen(s);i++)
+	{
+		diff=abs(flag-s[i]);
+		if(diff>13)
+		{
+			diff = 26-diff;
+		}
+		rotation=rotation+diff;
+		flag=s[i];
+	}
+	cout<<rotation<<endl;
+	return 0;
+}
